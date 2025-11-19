@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2 style="text-align: center; font: bold; font-size: large;">This is Flask Application</h2>
+    <p style="text-align: center; font:bold; font-size: medium;">Ask your query to get Feedback and Score</p>
+    <p style="text-align: center; font: bold; font-size: medium;">The result of your query is {{ans}} </p>
+    <form style="text-align: center;" action="{{url_for('query')}}" method="post">
+        <input type="text" placeholder="Enter your text here!" type="submit" name="question">
+    </form>
+</body>
+</html>
